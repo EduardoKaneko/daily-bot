@@ -55,3 +55,17 @@ jobs:
       # - store_artifacts:
       #     path: test-reports
       #     destination: test-reports
+
+workflows:
+  version: 2
+  nightly:
+    triggers:
+      - schedule:
+          cron: "* * * * *"
+          filters:
+            branches:
+              only:
+                - master
+                - beta
+    jobs:
+      - test
