@@ -2,13 +2,14 @@
 import datetime
 from httplib2 import Http
 from json import dumps, loads
+import os
 
 #
 # Hangouts Chat incoming webhook quickstart
 #
 def main():
     http_obj = Http()
-    url = 'https://chat.googleapis.com/v1/spaces/AAAAzQuWP4o/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=V8asDvAFbzef_PxDCu0aVz4MEpqfUhqZ0d3DLVaKAro%3D'
+    url = os.environ['chat_url']
     
     # send info with bot
     bot_message = {
