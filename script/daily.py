@@ -8,8 +8,7 @@ from json import dumps, loads
 #
 def main():
     http_obj = Http()
-    # url = 'https://chat.googleapis.com/v1/spaces/AAAAzQuWP4o/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=V8asDvAFbzef_PxDCu0aVz4MEpqfUhqZ0d3DLVaKAro%3D'
-    url = 'https://chat.googleapis.com/v1/spaces/AAAABWPOP18/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=gklA01854tZ7MXupeLAF08Yn0OWkC9wll95uS7Wm_QA%3D'
+    url = 'https://chat.googleapis.com/v1/spaces/AAAAzQuWP4o/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=V8asDvAFbzef_PxDCu0aVz4MEpqfUhqZ0d3DLVaKAro%3D'
     
     # send info with bot
     bot_message = {
