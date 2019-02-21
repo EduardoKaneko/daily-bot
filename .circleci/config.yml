@@ -32,7 +32,7 @@ jobs:
           # command: sudo python3 install
 
           name: run script
-          command: sudo pip install httplib2 && python3 script/packtpub.py
+          command: sudo pip install httplib2 && python3 script/daily.py
           # name: install dependencies
           # command: |
           #   python3 -m venv venv
